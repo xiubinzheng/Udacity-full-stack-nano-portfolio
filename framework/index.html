@@ -3,29 +3,32 @@
 <html>
 <head>
 <title>Portfolio page of Xiubin Zheng</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet"
     src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant"
+    rel="stylesheet">
 
-<link rel="stylesheet" href="css/bootstrap.css">
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
 
 </head>
 <body>
 
     <div class="container">
-
-        <div class="row">
+        <!--my personal image and title-->
+        <header class="row">
             <div class="col-xs-3">
-                <img  class="heading-img" src="img/suit_headshot.jpg" alt="I don't normally wear suits. haha">
+                <img class="heading-img" src="img/suit_headshot.jpg"
+                    alt="I don't normally wear suits. haha">
             </div>
             <div class="col-xs-9 text-right text-uppercase ">
                 <h1 class="text-large">Xiubin Zheng</h1>
                 <h3>Software Engineer</h3>
             </div>
-        </div>
+        </header>
         <div class="row">
             <div class="col-md-12">
                 <hr class="hr">
@@ -34,7 +37,8 @@
 
         <div class="row">
             <div class="col-md-12">
-                <img class="img-responsive" src="img/panorama-Philadelphia.jpg" alt="The city that I called home for the past 14 years. Photo credited to www.academybuscharter.com"
+                <img class="img-responsive" src="img/panorama-Philadelphia.jpg"
+                    alt="The city that I called home for the past 14 years. Photo credited to www.academybuscharter.com"
                     alt="some photo of a cat">
             </div>
         </div>
@@ -44,44 +48,61 @@
                 <h2>Featured Work</h2>
             </div>
         </div>
-
+        <!--A list of my current and past projects-->
         <div class="row text-center">
-            <div class="col-xls-4 col-sm-4">
-                <img src="img/forrest-gump-movie.jpg" alt="A Movie Trailer Website!" data-toggle="modal" data-target="#project1">
+            <section class="col-xls-4 col-sm-4">
+                <img src="img/forrest-gump-movie.jpg" alt="A Movie Trailer Website!"
+                    data-toggle="modal" data-target="#project1">
                 <h3>Movie Trailer Website</h3>
                 <p>
                     <a href="https://github.com/xiubinzheng/nano-movie-trailer">https://github.com/xiubinzheng/nano-movie-trailer</a>
                 </p>
-            </div>
+            </section>
 
-            <div class="col-xls-4 col-sm-4">
-                <img src="img/my-site-screenshot.png" alt="A personal portfolio webiste that I built in eariler 2016." data-toggle="modal" data-target="#project2">
+            <section class="col-xls-4 col-sm-4">
+                <img src="img/my-site-screenshot.png"
+                    alt="A personal portfolio webiste that I built in eariler 2016."
+                    data-toggle="modal" data-target="#project2">
                 <h3>My Original Website</h3>
                 <p>
                     <a href="http://xiubinzheng.com/">http://xiubinzheng.com/</a>
                 </p>
-            </div>
+            </section>
 
-            <div class="col-xls-4 col-sm-4">
-                <img src="img/app-portfolio.png" alt="the very first project that I built for the udacity Android Developer NanoDegree" data-toggle="modal" data-target="#project3">
+            <section class="col-xls-4 col-sm-4">
+                <img src="img/app-portfolio.png"
+                    alt="the very first project that I built for the udacity Android Developer NanoDegree"
+                    data-toggle="modal" data-target="#project3">
                 <h3>My Portfolio App</h3>
                 <p>
                     <a href="https://github.com/xiubinzheng/appPortfolio">https://github.com/xiubinzheng/appPortfolio</a>
                 </p>
-            </div>
+            </section>
         </div>
 
-      <!-- Modal -->
+        <footer class="footer">
+            <div class="container">
+                <hr>
+                <p class="text-muted text-center">
+                    Feel free to check out my github profile at <a
+                        href="https://github.com/xiubinzheng">https://github.com/xiubinzheng</a>
+            </div>
+        </footer>
+
+
+        <!-- Modal, when clicked a pop up text box will come up -->
     </div>
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog"
+        aria-labelledby="movieModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Movie Trailer website</h4>
+                    <h4 class="modal-title" id="movieModalLabel">Movie Trailer
+                        website</h4>
                 </div>
-                <div class="modal-body">
-                    This is the first project completed for the Udacity Full Stack Developer NanoDegree.
-                    The webiste will display 6 of my personal favoite movies. I hope you like these too.
+                <div class="modal-body">This is the first project completed
+                    for the Udacity Full Stack Developer NanoDegree. The webiste will
+                    display 6 of my personal favoite movies. I hope you like these too.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -89,14 +110,35 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog"
+        aria-labelledby="mysiteModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">My Original Website</h4>
+                    <h4 class="modal-title" id="mysiteModal">My Original Website</h4>
                 </div>
-                <div class="modal-body">
-                    This is my first personal webiste that already existed before I started taking the Udacity Full Stack Developer NanoDegree. I thought I had already knew a lot about front end development since I had already been working as a web application developer, but it taught me some valuable skills that I previously was unware of.
+                <div class="modal-body">This is my first personal webiste that
+                    already existed before I started taking the Udacity Full Stack
+                    Developer NanoDegree. I thought I had already knew a lot about
+                    front end development since I had already been working as a web
+                    application developer, but it taught me some valuable skills that I
+                    previously was unware of.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog"
+        aria-labelledby="myAppModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myAppModal">My App Portfolio</h4>
+                </div>
+                <div class="modal-body">This is the first project in the
+                    Udacity Android Developer NanoDegree. I am planning on going back
+                    to finishing up the Udacity Android Developer NanoDegree very soon.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -104,20 +146,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">My App Portfolio</h4>
-                </div>
-                <div class="modal-body">
-                   This is the first project in the Udacity Android Developer NanoDegree. I am planning on going back to finishing up the Udacity Android Developer NanoDegree very soon.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
